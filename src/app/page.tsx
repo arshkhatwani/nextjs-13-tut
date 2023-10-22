@@ -1,7 +1,17 @@
+import Link from "next/link";
+
 export default function Home() {
     return (
-        <div>
-            <h1>Hello Next.js 13</h1>
-        </div>
+        <>
+            <header className="flex flex-row justify-between items-center">
+                <h1 className="text-2xl">Todos</h1>
+
+                <Link
+                    href="/new"
+                    className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none">
+                    New
+                </Link>
+            </header>
+        </>
     );
 }
